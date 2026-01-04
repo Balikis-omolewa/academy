@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.2/animation_utility.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <title>WebridensCode Academy - SignupPage</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header" class="fixed-top bg-accent-transparent glass-effect py-0 px-5" style="z-index: 9999;">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container-fluid ps-3">
+                <div class="logo-container">
+                    <a class="navbar-brand" href="index.html"><img src="image/wbclogo.png" alt="" class="img-fluid"></a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered accent-color-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-xl-4 ps-xl-5 me-auto mb-2 mb-xl-0 gap-1">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Introduction to HTML & CSS</a></li>
+                                <li><a class="dropdown-item" href="service.html">Frontend Web Development Training</a></li>
+                                <li><a class="dropdown-item" href="faq.html">Understanding GIt/GITHUB</a></li>
+                                <li><a class="dropdown-item" href="404.html">AI Video Training</a></li>
+                                <li><a class="dropdown-item" href="404.html">Data Analysis</a></li>
+                                <li><a class="dropdown-item" href="404.html">Introduction to Computer Training</a></li>
+                            <li><a class="dropdown-item" href="404.html">Office Data Entry Training</a></li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Bootcamp
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="bootcamp.html">Bootcamps</a></li>
+                                <li><a class="dropdown-item" href="bootcamp_detail.html">Bootcamp Details</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="testmonials.html">Testimonials</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="student_projects/">Student Projects</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pricing_plan.html">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Last Article</a></li>
+                                <li><a class="dropdown-item" href="single_blog.html">Single Post</a></li>
+                            </ul>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                          
+                    </ul>
+                    <div class="mb-xl-0 mb-3 d-flex flex-xl-row flex-column gap-3 w-max-content ps-xl-3" style="justify-self: center;">
+                        <!-- <a href="" class="btn btn-accent accent d-flex flex-row gap-2 justify-content-center">
+                            <span>Sign Up</span>
+                        </a> -->
+                        <a href="" class="btn btn-accent d-flex flex-row gap-2 justify-content-center">
+                            <span>Get Started</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main>
+        <br> <br> <br> <br>
+       <center>
+<div class="col col-xl-5 mb-3 mt-3">
+                        <div class="d-flex flex-column gap-5">
+                             <div class="d-flex flex-column gap-4 p-5 bg-accent shadow-accent me-xl-5">
+                                <h4 style="color: #222222;">
+                                    Start Your Tech Journey Today!</h4>
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToastAppointment" class="toast success_msg_appointment bg-dark-transparent text-white" role="alert" aria-live="assertive" aria-atomic="true">
+                                        <div class="d-flex">
+                                            <div class="toast-body">
+                                                Your Appointment Message Send Successfully!.
+                                            </div>
+                                            <button type="button" class="btn me-2 m-auto text-white" data-bs-dismiss="toast" aria-label="Close">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form class="d-flex flex-column gap-1 h-100 justify-content-center w-100 needs-validation form" novalidate>
+                                    <input type="text" name="action" value="appointment" hidden>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control py-3 px-4" name="name" id="name" placeholder="Your Full Name" required>
+                                        <div class="invalid-feedback">
+                                            The field is required.
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="email" class="form-control py-3 px-4" name="email" id="email" placeholder="Your E-mail" required>
+                                        <div class="invalid-feedback">
+                                            The field is required.
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="tel" class="form-control py-3 px-4" name="phone" id="phone" placeholder="Your Phone Number" required>
+                                        <div class="invalid-feedback">
+                                            The field is required.
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <select name="bootcamp" id="bootcamp" class="form-control form-select py-3 px-4" required>
+                                            <option value="" selected>Select Tech Program </option>
+                                            <option value="1">Introduction to Computer</option>
+                                            <option value="2">Introduction to HTML/CSS Training</option>
+                                            <option value="3">Frontend Web Development</option>
+                                            <option value="4">AI Video Editing</option>
+                                            <option value="5">Microsoft Office Package</option>
+                                        </select>
+                                    </div>
+                                     <div class="mb-4">
+                                        <input type="text" class="form-control py-3 px-4" name="text" id="email" placeholder="What are located?" required>
+                                      
+                                    <div> <br><br>
+                                    <div class="mb-4">
+                                        <select name="location" id="location" class="form-control form-select py-3 px-4" required>
+                                            <option value="" selected>Preferred Location</option>
+                                            <option value="1">Online/Virtual </option>
+                                            <option value="2">Pysical Class </option>
+                                        </select>
+                                    </div>
+                                     <div class="mb-4">
+                                        <input type="text" class="form-control py-3 px-4" name="text" id="email" placeholder="What do you do currently?" required>
+                                      
+                                    <div> <br>
+                                          <div class="mb-4">
+                                        <select name="location" id="location" class="form-control form-select py-3 px-4" required>
+                                            <option value="" selected>How do get to know webridens?</option>
+                                            <option value="1">Facebook </option>
+                                            <option value="2">Instagram </option>
+                                            <option value="3">friend </option>
+                                            <option value="4">Whatsapp </option>
+                                        </select>
+                                    </div>
+                                        <button type="submit" class="btn btn-accent submit_appointment d-flex justify-content-center gap-2 rounded-4">
+                                            <span>Register</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+       </center>
+    </main>
+
+    <footer>
+        <div class="section py-5 bg-attach-cover" style="background-color: #222222;">
+            <div class="d-flex flex-column gap-3 bg-accent text-white" style="padding: 53px; border-radius: 88px;">
+                <div class="row row-cols-xl-2 row-cols-1">
+                    <div class="col col-xl-7 mb-3">
+                        <div class="d-flex flex-column gap-5 position-relative">
+                            <div class="d-flex flex-column gap-5 position-relative" style="z-index: 2;">
+                                <div class="d-flex flex-row gap-3">
+                                    <div class="border-end pe-3 border-accent-4">
+                                        <a href="" class="read-more d-flex flex-row gap-3 align-items-center">
+                                            Keep In Touch
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="" class="read-more d-flex flex-row gap-3 align-items-center">
+                                            info@academy.wbr.com
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-row gap-5">
+                                   <div>
+                                    <h6 style="color: #222222; font-weight: 700; font-size: 20px;" >
+                                            Services
+                                        </h6>
+                                    <ul class="list ps-0 gap-3 accent-color">
+                                        
+                                        
+                                        <li>
+                                               <a href="courses.html" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                Courses
+                                            </a>
+                                        </li>
+                                       <li>
+                                               <a href="testmonials.html" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                Testimonials
+                                            </a>
+                                        </li>
+                                         <li>
+                                            <li>
+                                               <a href="student_projects/" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                Student Projects
+                                            </a>
+                                        </li>
+                                            <a href="instructor.html" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                Become an Instructors
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <li>
+                                               <a href="about.html" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                About
+                                            </a>
+                                        </li>
+                                              <a href="blog/" class="link d-flex flex-row gap-3 align-items-center read-more">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        
+                                    </ul>
+                                   </div>
+                                     <div class="d-flex flex-column gap-3">
+                                        <h6 style="color: #222222; font-weight: 700; font-size: 20px;">
+                                            Class Plan
+                                        </h6>
+                                        <a href="classplan.html" class="read-more">
+                                           Basic Class
+                                        </a>
+                                        <a  href="classplan.html" class="read-more">
+                                            Advanced Class
+                                        </a>
+                                          <a  href="classplan.html"  href="classplan.html"class="read-more">
+                                           Physical Class
+                                        </a>
+                                        <a  href="classplan.html" class="read-more">
+                                            Private Class
+                                        </a> <br>
+                                         <h6 style="color: #222222; font-weight: 700;">
+                                            Follow Us On
+                                        </h6>
+                                        <a href="https://www.facebook.com" class="read-more">
+                                            Facebook
+                                        </a>
+                                        <a href="https://www.instagram.com" class="read-more">
+                                            Instagram
+                                        </a>
+                                     </div>
+                                    <div class="d-flex flex-column gap-3">
+                                        <h6 style="color: #222222; font-weight: 700;">
+                                            Contact Us
+                                        </h6>
+                                         <a  class="read-more">
+                                            46, Fashoro Street, <br>
+                                            Bishop Road, Ishaga, <br>
+                                            Surulere, Lagos.
+                                        </a>
+                                           <a  class="read-more">
+                                            codeacademy.wbr@gmail.com
+                                        </a>
+                                           <a  class="read-more">
+                                          +234 808 575 4756
+                                        </a>
+                                        
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floating-footer">
+                                <img src="image/img_footer.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-xl-5 mb-3">
+                        <div class="d-flex flex-column gap-5">
+                            <img src="image/wbclogo.png" alt="" class="img-fluid" width="200" style="align-self: end;">
+                            <div class="d-flex flex-column gap-4 p-5 bg-accent shadow-accent me-xl-5">
+                                <h4 style="color: #222222;">
+                                    Start Your Tech Journey Today!</h4>  <a href="" class="btn btn-accent d-flex flex-row gap-2 justify-content-center">
+                            <span>Enrol Now!</span>
+                        </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <br> <br> <br> <br>
+                    <span class="accent-color-4 fs-6 font-2">
+                        © Copyright 2025. All Rights Reserved Webridens Studio
+                    </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripts -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/video_embedded.js"></script>
+    <script src="js/vendor/fslightbox.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/shishirraven/animate-on-scroll@v1.0/oyethemes_onscroll_animation.js"></script>
+</body>
+
+</html>

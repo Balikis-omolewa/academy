@@ -1,0 +1,1 @@
+chrome-extension://hamhaljjdpcgkelbadepgmnocknejief/vendors/jquery-ui-1.12.0.min.js
